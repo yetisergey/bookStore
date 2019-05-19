@@ -1,11 +1,9 @@
 import React from 'react'
-import AddBook from '../containers/AddBook'
-import VisibleBookList from '../containers/VisibleBooks'
+import Books from './Books'
 
 const App = () => (
   <div>
-    <AddBook></AddBook>
-    <VisibleBookList></VisibleBookList>
+    <Books></Books>
   </div>
 )
 
