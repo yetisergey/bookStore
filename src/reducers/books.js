@@ -1,4 +1,9 @@
-export default (state = { books: [], modal: {} }, action) => {
+ const initialState = {
+      books: [],
+      modal: {}
+  }
+
+export default (state = initialState, action) => {
     switch (action.type) {
         case 'ADD_BOOK': {
             if (action.id && action.name) {
@@ -38,7 +43,10 @@ function makeBook(action) {
     const book = {
         id: action.id,
         name: action.name,
-        description: action.description
+        description: action.description,
+        author: action.author,
+        photo: action.photo,
+        page: action.page
     }
     return book;
 }
