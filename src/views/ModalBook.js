@@ -67,7 +67,7 @@ class ModalBook extends React.Component {
                 <LabeledTextInput name="name" value={this.state.name || ''} onChange={this.handleChange}></LabeledTextInput>
                 <LabeledTextInput name="page" value={this.state.page || ''} onChange={this.handleChange}></LabeledTextInput>
                 <LabeledTextArea name="description" value={this.state.description || ''} onChange={this.handleChange}></LabeledTextArea>
-                <ImageUploader name="photo" onChange={this.handleImageChange}></ImageUploader>
+                <ImageUploader name="photo" file={this.state.photo} onChange={this.handleImageChange}></ImageUploader>
               </ModalBody>
               <ModalFoot>
                 <Button onClick={e => { this.onSave() }} >{this.isCreate() ? 'Add book' : 'Edit book'}</Button>

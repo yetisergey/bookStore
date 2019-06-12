@@ -3,7 +3,7 @@ import React from "react";
 export default class ImageUploader extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {};
+        this.state = { image: props.file && URL.createObjectURL(props.file) };
         this.onFileChanged = this.onFileChanged.bind(this);
     }
 

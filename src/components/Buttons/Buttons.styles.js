@@ -3,7 +3,7 @@ export const Button = styled.button`
     height:40px;
     background-color: #29bb9c;
     color: white;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
     border:none;
     padding: 5px 20px;
     position:relative;
@@ -20,15 +20,4 @@ export const Button = styled.button`
         background-color:#27b395;
     }
 
-    ::after{
-        content:"";
-        display: block;
-        position:absolute;
-        height:8px;
-        left:0px;
-        top:calc(100% - 3px);
-        border-radius:0 0 5px 5px;
-        background-color: #24a589;
-        width: 100%;
-    }
 `
